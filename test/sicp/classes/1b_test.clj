@@ -10,3 +10,6 @@
 
 (deftest test-non-recursive-fib
   (is (= 13 (fib 7))))
+
+(deftest test-count-change
+  (is (= 292 (count-change 100))))
