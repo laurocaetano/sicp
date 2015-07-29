@@ -7,3 +7,6 @@
 
 (deftest test-fib
   (is (= 13 (fib 7))))
+
+(deftest test-non-recursive-fib
+  (is (= 13 (fib 7))))
