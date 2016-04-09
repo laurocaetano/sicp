@@ -13,3 +13,15 @@
 
 (deftest test-count-change
   (is (= 292 (count-change 100))))
+
+(deftest test-expt
+  (is (= 4 (expt 2 2)))
+  (is (= 8 (expt 2 3))))
+
+(deftest test-expt-non-recursive
+  (is (= 4 (expt-non-recursive 2 2)))
+  (is (= 8 (expt-non-recursive 2 3))))
+
+(deftest test-fast-expt
+  (is (= 4 (fast-expt 2 2)))
+  (is (= 8 (fast-expt 2 3))))
