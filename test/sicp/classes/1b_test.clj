@@ -25,3 +25,6 @@
 (deftest test-fast-expt
   (is (= 4 (fast-expt 2 2)))
   (is (= 8 (fast-expt 2 3))))
+
+(deftest test-gdc
+  (is (= 2 (gdc 206 40))))

@@ -67,3 +67,8 @@
     (= n 0) 1
     (even? n) (square (fast-expt b (/ n 2)))
     :else (* b (fast-expt b (- n 1)))))
+
+(defn gdc
+  [a b]
+  (if (= b 0) a
+      (gdc b (rem a b))))
