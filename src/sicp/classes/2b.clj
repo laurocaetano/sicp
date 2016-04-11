@@ -22,3 +22,9 @@
    (+ (* (numer x) (denom y))
       (* (numer y) (denom x)))
    (* (denom x) (denom y))))
+
+(defn mult-rat
+  [x y]
+  (make-rat
+   (* (numer x) (numer y))
+   (* (denom x) (denom y))))
