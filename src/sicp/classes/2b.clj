@@ -28,3 +28,8 @@
   (make-rat
    (* (numer x) (numer y))
    (* (denom x) (denom y))))
+
+(defn list-ref
+  [items n]
+  (if (= n 0) (first items)
+      (list-ref (rest items) (- n 1))))
