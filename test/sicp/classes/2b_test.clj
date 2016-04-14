@@ -13,3 +13,6 @@
 (deftest test-list-ref
   (is (= 16 (list-ref '(1 4 9 16 25) 3)))
   (is (= 3 (list-ref '(4 3 2 1) 1))))
+
+(deftest test-scale-list
+  (is (= '(10 20 30 40) (scale-list '(1 2 3 4) 10))))

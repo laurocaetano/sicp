@@ -33,3 +33,9 @@
   [items n]
   (if (= n 0) (first items)
       (list-ref (rest items) (- n 1))))
+
+(defn scale-list
+  [list factor]
+  (if (empty? list) nil
+      (cons (* (first list) factor)
+            (scale-list (rest list) factor))))
