@@ -16,3 +16,6 @@
 
 (deftest test-scale-list
   (is (= '(10 20 30 40) (scale-list '(1 2 3 4) 10))))
+
+(deftest test-scale-tree
+  (is (= '(10 (20 (30 40) 50) (60 70)) (scale-tree '(1 (2 (3 4) 5) (6 7)) 10))))

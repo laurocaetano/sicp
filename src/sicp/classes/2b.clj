@@ -39,3 +39,10 @@
   (if (empty? list) nil
       (cons (* (first list) factor)
             (scale-list (rest list) factor))))
+
+(defn scale-tree
+  [sub-tree factor]
+  (cond (and (list? sub-tree) (empty? sub-tree)) nil
+        (not (list? sub-tree)) (* sub-tree factor)
+        :else (cons (scale-tree (first sub-tree) factor)
+                    (scale-tree (rest sub-tree) factor))))
